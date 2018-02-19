@@ -38,3 +38,11 @@ def turn(board)
   input = gets
 end
 
+# Code your CLI Here
+puts "Welcome to Tic Tac Toe!"
+board = [" "," "," "," "," "," "," "," "," "]
+puts "Where would you like to go?"
+input = gets.strip
+index = input_to_index(input)
+move(board, index, "X")
+display_board(board)
